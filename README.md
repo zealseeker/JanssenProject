@@ -7,3 +7,4 @@ TO DO:
 * Upload current code
 
 Please create your own branch and submit a pull request, any modifications to code can then be merged with the main branch after code review by other collaborators.
+https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html

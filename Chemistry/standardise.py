@@ -3,7 +3,6 @@ import warnings
 from rdkit import Chem
 import pandas as pd
 from chembl_structure_pipeline import standardizer
-import tqdm
 
 def read_standardise(smi) -> Chem.rdchem.Mol:
     null_mol = Chem.MolFromSmiles('')

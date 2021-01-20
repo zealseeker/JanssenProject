@@ -16,8 +16,8 @@ def read_standardise(smi) -> Chem.rdchem.Mol:
     m = standardizer.get_parent_mol(m)[0]
     return m
 
-def standardise_dataframe(df):
-    mols = df['Compound SMILES'].apply(read_standardise)
+def standardise_dataframe(df, column='Compound SMILES'):
+    mols = df[column].apply(read_standardise)
     df['std_canonical_smiles'] = mols.apply(Chem.MolToSmiles)
     df['std_inchi_key'] = mols.apply(Chem.MolToInchiKey)
     return df
